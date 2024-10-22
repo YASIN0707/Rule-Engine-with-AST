@@ -56,7 +56,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 
-Run the Flask server:
+step 3: Run the Flask server:
 cd backend
 
 python app.py
@@ -65,32 +65,46 @@ The server should run on http://127.0.0.1:5500/.
 
 API Endpoints
 1. Create Rule
+   
 URL: POST /create_rule
+
 Body:
-json
-Copy code
+
+
 {
   "rule": "age > 30 AND department = 'Sales'"
 }
+
 Response:
+
 {
   "message": "Rule created successfully",
   "ast": "AST representation"
 }
-2. Combine Rules
+
+3. Combine Rules
+
 URL: POST /combine_rules
+
 Body:
+
 {
   "rules": ["age > 30", "salary > 50000"]
 }
+
 Response:
+
 {
   "message": "Rules combined successfully",
   "combined_ast": "Combined AST"
 }
-3. Evaluate Rule
+
+4. Evaluate Rule
+   
 URL: POST /evaluate_rule
+
 Body;
+
 {
   "data": {
     "age": 35,
@@ -104,11 +118,15 @@ Body;
     "right": {...}
   }
 }
+
 Response:
+
 {
   "is_eligible": true
 }
+
 Running the Application
+
 Start the Flask backend:
 python app.py
 
