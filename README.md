@@ -40,16 +40,27 @@ Database: SQLite (if persistence is added)
 Testing: Postman (for API testing)
 
   **Installation**
+  
 step 1: Clone the repository
+
 https://github.com/YASIN0707/Rule-Engine-with-AST.git
+
 cd rule-engine-app
+
 Step 2: Set up a virtual environment and install dependencies:
+
 python -m venv venv
+
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 pip install -r requirements.txt
+
+
 Run the Flask server:
 cd backend
+
 python app.py
+
 The server should run on http://127.0.0.1:5500/.
 
 API Endpoints
