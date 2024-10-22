@@ -82,7 +82,7 @@ Response:
   "ast": "AST representation"
 }
 
-3. Combine Rules
+2. Combine Rules
 
 URL: POST /combine_rules
 
@@ -99,7 +99,7 @@ Response:
   "combined_ast": "Combined AST"
 }
 
-4. Evaluate Rule
+3. Evaluate Rule
    
 URL: POST /evaluate_rule
 
@@ -132,33 +132,47 @@ python app.py
 
 Access the frontend through a simple HTTP server or directly opening frontend/index.html.
 
-Testing with Postman
+**Testing with Postman**
+
 You can test the API using Postman:
 
 1.Open Postman.
+
 2.Set the method to POST.
+
 3.Use the following URLs for testing:
+
   .Create Rule: http://127.0.0.1:5500/create_rule
+  
   .Combine Rules: http://127.0.0.1:5500/combine_rules
+  
   .Evaluate Rule: http://127.0.0.1:5500/evaluate_rule
+  
 4.Send the appropriate JSON body in the request.
+
 Example Rules
+
 .Create Rule: age > 30 AND department = 'HR'
-.Combine Rules:
+
+.Combine Rules
     .Rule 1: age > 25
     .Rule 2: salary > 50000
 .Evaluate Rule:
+
   .User Data: { "age": 35, "salary": 60000, "department": "Sales" }
   .Combined AST from previous rules.
+  
 **Frontend Integration**
 1.You can enter rules and data in the provided form in the frontend (located in frontend/index.html).
 2.Use the buttons to create, combine, and evaluate rules via the API.
 3.Results are displayed on the page after submitting the form.
+
 **Contributing**
+
 Feel free to submit issues and feature requests. Contributions are welcome! Fork the repository and create a pull request with your changes.
 
 **License**
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Let me know if you need any changes to the README.md or additional details.
   
