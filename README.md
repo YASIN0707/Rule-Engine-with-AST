@@ -5,3 +5,16 @@ This is a Rule Engine Application that allows users to create rules, combine the
 
 Landing page:
 ![screenshot](./assets/screenshot1.png)
+
+Create Rule:
+![screenshot](./assets/screenshot2.png)
+
+Combine Rule:
+![screenshot](./assets/screenshot3.png)
+
+Evaluating Rule:
+![screenshot](./assets/screenshot4.png)
+
+
+
+
